@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    width: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: rgb(204, 229, 238);
+  }
+  .body {
+    width: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: rgb(204, 229, 238);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .navbar {
+    width: 100%;
+    background-color: #0f2b60;  
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+  }
+
+  .navbar-l p {
+    font-size: 27px;
+    font-weight: bolder;
+    margin-left: -8%;
+  }
+
+  .navbar-r button {
+    margin-left: 16px;
+    background-color: white;
+    color: #0f2b60;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+  }
+  
+  .navbar-r button:hover {
+    background-color: #aad4ff;
+  }
+  .navbar-r .lang {
+    padding: 8px 10px;
+    margin-left: -7%;
+  }
+  .body h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+    color: #0f2b60;
+  }
+  .body .rc {
+    margin-left: 16px;
+    background-color: rgb(88, 104, 255);
+    color: #ffffff;
+    border: none;
+    padding: 20px 28px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: large;
+    transition: 0.3s ease;
+  }
+  .body .vc {
+    margin-left: 16px;
+    background-color: rgb(88, 104, 255);
+    color: #ffffff;
+    border: none;
+    padding: 20px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: large;
+    transition: 0.3s ease;
+  }
+  .body .buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px; 
+    justify-content: center;
+    transition: 0.3s;
+  }
+  .body .buttons :hover {
+    background-color: #626364;
+  }
+  .info-section {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    margin-top: 60px;
+    padding: 0 40px;
+    flex-wrap: wrap; /* responsive fallback */
+  }
+  
+  .info-block {
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    padding: 30px;
+    max-width: 400px;
+    flex: 1;
+    min-width: 280px;
+    text-align: left;
+  }
+  
+  .info-block h3 {
+    font-size: 22px;
+    color: #0f2b60;
+    margin-bottom: 10px;
+  }
+  
+  .info-block p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+  }
+  .login-page {
+    height: 100vh;
+    background-color: #f2f6fc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #2e2e2e;
+  }
+  
+  .login-box {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .login-form input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  .login-form input:focus {
+    border-color: #3b82f6;
+  }
+  
+  .login-form button {
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .login-form button:hover {
+    background-color: #2563eb;
+  }
+  .signup-page {
+    height: 100vh;
+    background-color: #f2f6fc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .signup-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #2e2e2e;
+  }
+  
+  .signup-box {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .signup-form input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  .signup-form input:focus {
+    border-color: #3b82f6;
+  }
+  
+  .signup-form button {
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .signup-form button:hover {
+    background-color: #2563eb;
+  }
+  .NW {
+    position: relative;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Centered title at top */
+  .NW h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin: 0;
+  }
+  
+  /* Subtitle right under h1 */
+  .NW h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  
+  /* Form box in bottom-left corner */
+  .report-form-container {
+    position: absolute;
+    bottom: 40px;
+    left: 370px;
+    background-color: #ffffff;
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+  }
+  
+  .report-form-container h2 {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    color: #34495e;
+  }
+  
+  .incident-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  .incident-form label {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 1rem;
+  }
+  
+  .incident-form select,
+  .incident-form textarea {
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #d1d1d1;
+    background-color: #f9f9f9;
+    transition: 0.3s ease;
+  }
+  
+  .incident-form select:focus,
+  .incident-form textarea:focus {
+    border-color: #4681f4;
+    background-color: #ffffff;
+  }
+  
+  .incident-form textarea {
+    resize: none;
+  }
+  
+  .incident-form button {
+    margin-top: 1rem;
+    padding: 0.9rem;
+    font-size: 1rem;
+    background-color: #4681f4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .incident-form button:hover {
+    background-color: #365fcf;
+  }
+  .Recent-Reports {
+    position: absolute;
+    bottom: 40px;
+    right: 370px;
+    background-color: #ffffff;
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 450px;
+  }
+  .recent-incidents {
+    position: absolute;
+    bottom: 40px;
+    right: 250px;
+    background-color: #ffffff;
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 450px;
+  }
+  
+  .recent-incidents h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .incident-item {
+    background: white;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+  }
+  
